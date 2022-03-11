@@ -1,11 +1,17 @@
-# get user input
-user = input("Enter your username: ")
+print('''
+Welcome to password checker!
+let\'s make sure your password is secure.
+      ''')
+
+username = input("Please enter your username: ")
 keep_asking = True
 
 while keep_asking:
-    password = input("Enter your password: ")
+    password = input("Please enter a password with at least 15 characters: ")
     if len(password) < 15:
-        print("password must be at least 15 characters")
+        print("Password is too short. Provide at least 15 characters.\n")
     else:
-        print("Your password is secure!")
-        keep_asking = False
+    password_length = len(password)
+    keep_asking = False
+
+print(f"Your password is {password_length} characters long. You have a SECURE password.")
