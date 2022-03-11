@@ -14,4 +14,4 @@ while keep_asking:
     password_length = len(password)
     keep_asking = False
 
-print(f"Your password is {password_length} characters long. You have a SECURE password.")
+print(f"Awesome! {username} Your password is {password_length} characters long. You have a SECURE password.")
