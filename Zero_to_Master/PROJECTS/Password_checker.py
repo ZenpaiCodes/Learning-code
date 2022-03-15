@@ -11,7 +11,7 @@ while keep_asking:
     if len(password) < 15:
         print("Password is too short. Provide at least 15 characters.\n")
     else:
-    password_length = len(password)
+        password_length = len(password)
     keep_asking = False
 
-print(f"Your password is {password_length} characters long. You have a SECURE password.")
+print(f"Awesome! {username} Your password is {password_length} characters long. You have a SECURE password.")
