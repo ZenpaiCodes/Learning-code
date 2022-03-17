@@ -32,3 +32,9 @@ print(user.get('age', 55)) # prints 18. Since age is assigned it prints its valu
 # .keys() checks if item is a key.
 # .values() checks if item its a value.
 # .items() grabs both keys and values.
+
+# .popItem() removes last item inserted into the dictionary.
+
+# .update() updates the dictionary
+user.update({'age':64}) # use {} - If key and value not found in dict, it will add them.
+
