@@ -1,5 +1,8 @@
 # LOOPS
     # for
+from turtle import bye
+
+
 inventory = ['food', 'medicine', 'weapon']
 
 # for variable in iterable
@@ -36,7 +39,7 @@ for key, value in box.items(): # commun practice when trying to print keys and v
 
 
 # EXCERCISE
-    # loop over each calue in list and add them up.
+    # loop over each value in list and add them up.
 numbers = [1,2,3,4,5,6,7,8,9,10] 
 sum = 0 # this variable must be outside of the loop. Because if it was inside, everytime the loop starts it would be reset vack into its original value.
 
@@ -64,8 +67,8 @@ for char in enumerate('Hello World!'):
     print(char) # index and its position.
 
 # EXCERCISE
-    # find index of number 50 in a list of 0 - 100
-position = enumerate(list(range(3, 100)))
+    # find index of number 50 in a numeric list.
+position = enumerate(list(range(40, 100)))
     # SOLUTION 1
 for x in position:
     if 50 in x:
@@ -73,7 +76,39 @@ for x in position:
         if b == 50:
             print(f'index of number 50 in this list is: {a}')
     # SOLUTION 2
+position = enumerate(list(range(40, 100)))
 for x, num in position:
     print(x, num)
-    if x == 50:
-            print(f'index number of 50 in this list is: {num}')
+    if num == 50:
+            print(f'index number of 50 in this list is: {x}')
+# EXCERCISE COMPLETED
+
+# while Loop
+i = 0 
+while i < 50: # while is a loop with a condition.
+    i += 1
+    print(i)
+else:
+    print('Done with all the work.') 
+    
+    # Break
+while True:
+    response = input('say something: ')
+    if response == 'bye':
+        break
+
+    # continue for loops and while loops
+for_list = [1,2,3]
+i = 0
+
+for i in for_list:
+    i += 1
+    print(i)
+    print('here')
+    continue # continue will return code to the first line of the loop
+    print('done')
+
+    # pass is a place holder.
+for _ in for_list:
+    # Not sure yet.
+    pass # pass is preventing the code from breaking
