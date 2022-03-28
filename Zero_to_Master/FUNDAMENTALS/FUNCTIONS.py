@@ -30,7 +30,7 @@ total = sum(4, 9) # 13
 print(sum(4, total)) # 4 + 13
 
 
-# EXCERCISE
+# EXERCISE
         # age = input("What is your age?: ")
 
         # if int(age) < 18:
@@ -56,7 +56,7 @@ def checkDriverAge(age = 0):
         print("Congratulations on your first year of driving. Enjoy the ride!")
 
 checkDriverAge(age = int(input("How old are you? ")))
-# EXCERCISE COMPLETED
+# EXERCISE COMPLETED
 
 # Docstrings
 def test(a): # comment under is how we comment in a function so that teammates can find out what the function does faster.

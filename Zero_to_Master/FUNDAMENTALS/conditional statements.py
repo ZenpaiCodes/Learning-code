@@ -31,7 +31,7 @@ if statement or statement_2:
 # another example. SHORT CIRCUTING.
 print(1 < 2 < 3 > 4 < 5 < 6) # prints false and breaks reading at 3>4 since it's False there is no need to read the rest.
 
-# EXCERCISE: ****************************
+# EXERCISE: ****************************
 is_magician = False
 is_expert = False
 

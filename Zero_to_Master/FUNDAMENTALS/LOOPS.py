@@ -38,7 +38,7 @@ for key, value in box.items(): # commun practice when trying to print keys and v
     print(key, value)
 
 
-# EXCERCISE
+# EXERCISE
     # loop over each value in list and add them up.
 numbers = [1,2,3,4,5,6,7,8,9,10] 
 sum = 0 # this variable must be outside of the loop. Because if it was inside, everytime the loop starts it would be reset vack into its original value.
@@ -46,7 +46,7 @@ sum = 0 # this variable must be outside of the loop. Because if it was inside, e
 for item in numbers:
     sum += item
 print(sum)
-# EXCERCISE FINISHED
+# EXERCISE FINISHED
 
 # range() 
 print(range(0, 100))
@@ -66,7 +66,7 @@ for x in range(10, 0, -1): # print from 10 to 1
 for char in enumerate('Hello World!'): 
     print(char) # index and its position.
 
-# EXCERCISE
+# EXERCISE
     # find index of number 50 in a numeric list.
 position = enumerate(list(range(40, 100)))
     # SOLUTION 1
@@ -81,7 +81,7 @@ for x, num in position:
     print(x, num)
     if num == 50:
             print(f'index number of 50 in this list is: {x}')
-# EXCERCISE COMPLETED
+# EXERCISE COMPLETED
 
 # while Loop
 i = 0 
