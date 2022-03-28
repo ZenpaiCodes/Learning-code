@@ -14,3 +14,4 @@ sentence = "thIs iS a senTENce"
 print(sentence.upper()) # all letters get upper case
 print(sentence.capitalize()) # first letter gets capitalized the rest is lower cased
 print(sentence.lower()) # everything gets lower cased
+

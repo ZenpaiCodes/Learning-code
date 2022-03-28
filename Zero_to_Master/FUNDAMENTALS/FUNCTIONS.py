@@ -59,10 +59,11 @@ checkDriverAge(age = int(input("How old are you? ")))
 # EXCERCISE COMPLETED
 
 # Docstrings
-def test(a):
+def test(a): # comment under is how we comment in a function so that teammates can find out what the function does faster.
     '''
     Info: this function test and prints param a
     '''
     print(a)
 
 test('function_variable')
+help(test) # Helps find out what a function does
