@@ -35,7 +35,12 @@ print(total)
 # Nonlocal variables can only be accessed by the function they are defined in
 # Nonlocal - variables defined in a parent function
 
-_myvariable = 'hello'
-x = 'hello'[0]
-print(x)
-
+# remove white space from a string.
+# https://www.w3schools.com/python/python_ref_string.asp
+# https://www.w3schools.com/python/python_ref_string.asp
+x = "   Hello World   "
+print(x.strip()) # will remove white space from the string.
+# return a string in upper case letters
+# methos to replace parts of a string
+# https://www.w3schools.com/python/ref_string_replace.asp
+y = x.replace(" ", "")

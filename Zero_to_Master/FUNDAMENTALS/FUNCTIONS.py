@@ -67,3 +67,8 @@ def test(a): # comment under is how we comment in a function so that teammates c
 
 test('function_variable')
 help(test) # Helps find out what a function does
+
+# lambda functions
+# lambda functions are functions that are defined without a name.
+# lambda functions are used to create anonymous functions.
+x = lambda a, b: a + b # x is a function that adds a and b.

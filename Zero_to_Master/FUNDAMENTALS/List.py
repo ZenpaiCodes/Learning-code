@@ -83,3 +83,7 @@ joined_sentence = "!".join(["hi","my","name","is","Diego"]) # prints hi!my!name!
 
 # LIST UNPACKING 
 a, b, c = [1, 2, 3] # a=1, b=2, c=3
+
+# replace value of a list item
+list_test = [1,2,3]
+list_test[0]
