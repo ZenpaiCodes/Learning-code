@@ -15,7 +15,7 @@ cat_3 = Cat('Yoruichi', 1000)
 # 2 Create a function that finds the oldest cat
 
 
-def find_oldest_cat(*args): # *args is a tuple.
+def find_oldest_cat(*args): # *args is a tuple. It can take multiple arguments. 
     return max(args) # max is a function already defined in python.
 
 
