@@ -1,4 +1,10 @@
 # OOP
+# 4 pillars of OOP
+# 1. Abstraction - hiding the details of how something works.
+# 2. Encapsulation - hiding the details of how something works.
+# 3. Inheritance - subclassing
+# 4. Polymorphism - using the same method name on different types of objects.
+
 class PlayerCharacter:
     # self is refering to PlayerCharacter, that is being created.
     # This is a class attribute. It is shared by all instances of the class.
@@ -32,12 +38,15 @@ print(
 
 # 2ND example
 class user():
+    def __init__(self, email):
+        user.email = email
     def sign_in(self):
         print("You are logged in.")
 
 
 class warrior(user):
-    def __init__(self, name, power, skill):
+    def __init__(self, name, power, skill, email):
+        user.__init__(self, email) # calling the parent class __init__ method.
         self.name = name
         self.power = power
         self.skill = skill
@@ -48,7 +57,8 @@ class warrior(user):
 
 
 class wizard(user):
-    def __init__(self, name, spell, skill, mana):
+    def __init__(self, name, spell, skill, mana, email):
+        user.__init__(self, email) # calling the parent class __init__ method.
         self.name = name
         self.mana = mana
         self.spell = spell
@@ -56,7 +66,7 @@ class wizard(user):
 
     def attack(self):
         print(
-            f"{self.name} attacks with {self.spell} spell. {self.mana} mana is used.")
+            f"{self.name} attacks with {self.spell} spell: {self.mana} mana is used.")
 
 
 class archer(user):
@@ -68,3 +78,20 @@ class archer(user):
     def attack(self):
         print(
             f"{self.name} attacks with {self.power} power. {self.num_arrows} left.")
+
+
+warrior = warrior('Zulk', 99, 'fortify', 'zulk@email.com')
+wizard = wizard('Xeck', 'fire Ball', 'ultra magic', 80,'Xeck@mail.com')
+
+warrior.attack()
+wizard.attack()
+
+
+# player is a parameter. It is a variable to be used in the function.
+def player_attack(player):
+    player.attack()
+
+
+# warrior is an argument. It is a variable to be used in the function.
+player_attack(warrior)
+print(dir(archer))
