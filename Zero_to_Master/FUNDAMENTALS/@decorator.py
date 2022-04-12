@@ -1,4 +1,7 @@
 # @decorator
+from time import time
+
+
 def my_decorator(func):
     def wrap_function(*args, **kwargs):
         print('\n++++++++++')
@@ -8,7 +11,7 @@ def my_decorator(func):
 
 
 @my_decorator  # super bust our hello function.
-def hello(greeting, name = 'Diego'):
+def hello(greeting, name='Diego'):
     print(greeting, name)
 
 
@@ -16,7 +19,7 @@ hello('Hi', 'Diego')
 
 
 @my_decorator
-def bye(greeting, name = 'Diego'):
+def bye(greeting, name='Diego'):
     print(greeting, name)
 
 
@@ -26,7 +29,7 @@ bye('Goodbye', 'Diego')
 # EXERCISE
 print('\n\nEXERCISE:\n\n')
 
-from time import time
+
 def performance(func):
     def wrapped(*args, **kwars):
         time_1 = time()
@@ -36,9 +39,20 @@ def performance(func):
         return result
     return wrapped
 
+# GENERATOR + DECORATOR
 @performance
 def long_time():
-    for i in range(100000000):
+    for i in range(100000000): # range is the generator.
         i * 5
 
+
 long_time()
+
+
+@performance
+def long_time_2():
+    for i in list(range(100000000)):
+        i * 5
+
+
+long_time_2()

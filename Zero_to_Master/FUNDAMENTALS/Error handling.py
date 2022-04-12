@@ -8,7 +8,7 @@ except:
     print("Please enter a number.")
 else:
     print("Thank you.")
-finally: #  Try/Except/finall is a way to handle errors.
+finally:  # Try/Except/finall is a way to handle errors.
     print('final step.')
 
 
