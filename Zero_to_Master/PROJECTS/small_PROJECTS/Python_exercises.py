@@ -3,12 +3,12 @@
 # The numbers obtained should be printed in a comma-separated sequence on a single line.
 num_list = []
 
-for x in range(2000, 3201):
-    if x % 7 == 0 and x % 5 != 0:
-        num_list.append(x)
+for num in range(2000, 3201):
+    if num % 7 == 0 and num % 5 != 0:
+        num_list.append(num)
 
 
 print(num_list, end=',')
 
 # EXERCISE 2:
-# Write a program which can compute the factorial of a given numbers. 
+# Write a program which can compute the factorial of a given numbers.
