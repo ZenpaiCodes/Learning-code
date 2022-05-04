@@ -22,7 +22,7 @@ scores = [73, 20, 65, 19, 76, 100, 88]
 
 
 def check_if_over_50(score):
-    return score > 50
+    return score > 50 #   return acc + nums if nums > 50 else acc
 
 
 print(list(filter(check_if_over_50, scores)))

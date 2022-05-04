@@ -1,0 +1,26 @@
+package com.example.test_01_android;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle; //importing the androidx.appcompat.app.AppCompatActivity class from the androidx package 
+import android.util.Log;  // import Log class for logging messages
+import android.view.View; // import android.view.View; for View class 
+import android.widget.EditText;  // import the EditText class for EditText
+
+public class MainActivity extends AppCompatActivity { // AppCompatActivity is a subclass of Activity
+
+    public void clickFunction(View view) { // clickFunction is the name of the method
+
+        EditText InputName = (EditText) findViewById(R.id.InputText); // get the input text
+
+        Log.i("Values", InputName.getText().toString()); // print the input text to the log
+
+        Log.i("Info", "test"); // print test to the log
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
