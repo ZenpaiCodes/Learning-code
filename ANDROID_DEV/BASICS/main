@@ -2,20 +2,31 @@ package com.example.test_01_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle; //importing the androidx.appcompat.app.AppCompatActivity class from the androidx package 
-import android.util.Log;  // import Log class for logging messages
-import android.view.View; // import android.view.View; for View class 
-import android.widget.EditText;  // import the EditText class for EditText
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity { // AppCompatActivity is a subclass of Activity
+public class MainActivity extends AppCompatActivity {
 
-    public void clickFunction(View view) { // clickFunction is the name of the method
+    public void loginFunction (View view) { // loginFunction name of button.
 
-        EditText InputName = (EditText) findViewById(R.id.InputText); // get the input text
+        Log.i("Info", "Logged in!"); // log output when button pressed
 
-        Log.i("Values", InputName.getText().toString()); // print the input text to the log
+        EditText username = (EditText) findViewById(R.id.username); // username is the name of the edit text box
 
-        Log.i("Info", "test"); // print test to the log
+        Log.i("Values", username.getText().toString()); // log output when button pressed and username and password are entered
+
+        EditText textPassword = (EditText) findViewById(R.id.textPassword); // textPassword is the name of the edit text box
+
+        Log.i("Values", textPassword.getText().toString()); // log output when button pressed and username and password are entered
+
+        // print toast with username
+        Toast.makeText(getApplicationContext(), "Username: " + username.getText().toString(), Toast.LENGTH_LONG).show();
+
+        // change image when button pressed
+        findViewById(R.id.imageView).setVisibility(View.VISIBLE);
     }
 
     @Override
