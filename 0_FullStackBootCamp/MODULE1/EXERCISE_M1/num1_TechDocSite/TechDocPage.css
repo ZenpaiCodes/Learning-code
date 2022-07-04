@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 1rem;
+}
+
+.left-navigation {
+    background-color: rgba(47, 47, 245, 0.212);
+    max-width:15%; 
+    /* when width always max */
+    min-height:100vh;
+}
+
+.content {
+    min-width:85%;
+}
+

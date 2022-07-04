@@ -1,0 +1,146 @@
+/* ALWAYS ADD */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gentium Book Plus', serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+hr {
+  border: 0ch;
+  border-top: 1px solid #ccc;
+}
+
+.wrapper {
+  margin: auto;
+  width: 100%;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+body {
+  padding: 0 8rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.nav-area li {
+  display: inline-block;
+}
+
+.nav-area li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.nav-area li a:hover {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.767);
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.welcome-text {
+  margin: 20% 30%;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.center-txt-margin {
+  background-color: rgb(161, 10, 10);
+  text-align: center;
+  padding: 0.55rem;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+.sub-header {
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+}
+
+.sub-header:hover {
+  background: #fff;
+  color: rgba(22, 22, 22, 0.747);
+}
+
+.cont {
+  color: white;
+  padding: 0 1.45rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.image-container>img {
+  max-width: 505px;
+  min-height: 250px;
+  object-fit: scale-down;
+}
+
+.video-container {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.video-container>img {
+  max-width: 505px;
+  min-height: 250px;
+  object-fit: scale-down;
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.726);
+  padding: 1rem;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
