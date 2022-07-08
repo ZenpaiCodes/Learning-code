@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>HTML FORMS</title>
+</head>
+
+<body>
+  <form action="">
+    <label for="">First Name</label><br>
+    <input type="text" name="firstName" id="firstName"><br>
+
+    <label for="">Last Name</label><br>
+    <input type="text" name="lastName" id="lastName"><br>
+
+    <!-- RADIO BOTTONS -->
+    <br>
+    <input name="gender" id="male" type="radio" value="male">
+    <label for="male">Male</label><br>
+
+    <input name="gender" id="female" type="radio" value="female">
+    <label for="female">Female</label><br>
+
+    <!-- THIS ENSURES TOUCH SCREEN RESPONCE AS WELL -->
+    <label for="other">
+      <input name="gender" id="other" type="radio" value="other">
+      Other</label>
+    <!-- ENDS HERE -->
+
+    <br><br>
+
+    <label for="">Age</label><br>
+    <input type="number" name="age" id="age"><br>
+
+    <label for="">Email</label><br>
+    <input type="email" name="email" id="email"><br>
+
+    <label for="">Password</label><br>
+    <input type="password" name="password" id="password"><br>
+
+    <label for="">Confirm Password</label><br>
+    <input type="password" name="confirmPassword"
+      id="confirmPassword"><br>
+
+    <br><br>
+
+    <!-- CHECK BOXES -->
+    <h3>would you like to receive offers and exclusive content?</h3>
+
+    <input name="answer" id="yes" type="checkbox" value="yes">
+    <label for="male">Yes! sign me up.</label><br>
+
+
+    <!-- SUBMIT BOTTONS -->
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
