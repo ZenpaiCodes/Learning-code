@@ -6,33 +6,98 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>MyTube</title>
+  <link rel="stylesheet" href="styleCss.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-  <!-- This is for the icon on the TOP-LEFT corner + the menu-->
-  <div class="mainMenu">
-    <div class="logo">
-      <i>Menu</i>
-      <img src="images/logo_wh_backgtound.png" alt="" />
+  <header class="myTubeHeader">
+    <div class="myTubeLogo">
+      <img src="./images/logo_wh_backgtound.png" alt="">
     </div>
 
-    <!-- Search bar at the TOP-MID -->
-    <div class="searchBar">
-      <input type="text">
-      <button><i>Search</i></button>
+    <!-- Search input and search icon (TOP-MID) -->
+    <div class="myTubeNav">
+      <input type="text" class="myTubeHeaderSearchBar"
+        placeholder="Search">
+      <button class="searchIconHeader">
+        <i class="fa fa-search"></i></button>
     </div>
 
-    <!-- This is for the upload button, notifications and profile -->
-    <div class="icons">
-      <i>upload</i>
-      <i>notifications</i>
-      <i>userProfile</i>
+    <!-- User icon (TOP-RIGHT) -->
+    <div class="myTubeIcons">
+      <div class="myTube_Icon">
+        <i class="fa fa-video-camera"></i>
+      </div>
+      <div class="myTube_Icon">
+        <i class="fa fa-th"></i>
+      </div>
+      <div class="myTube_Icon">
+        <i class="fa fa-bell"></i>
+      </div>
+      <div class="myTubeIcon avatar">
+        <i class="myTubeHeaderAvatarIcon"></i>
+      </div>
+
     </div>
 
-  </div>
+  </header>
+
+  <!-- LEFT Sidebar -->
+  <div class="myTubeBottomSection">
+    <div class="myTubeSideBar">
+      <div class="myTubeSideBarField">
+        <i class="fa fa-home"></i>
+        <a href="index.html"><h1>Home</h1></a>
+      </div>
+      <div class="myTubeSidebar__hr"></div>
+      <div class="myTubeSideBarField">
+        <i class="fa fa-folder"></i>
+        <a href="collection1.html"><h1>Collection 1</h1></a>
+
+      </div>
+      <div class="myTubeSideBarField">
+        <i class="fa fa-folder"></i>
+        <a href="collection2.html"><h1>Collection 2</h1></a>
+      </div>
+      <div class="myTubeSideBarField">
+        <i class="fa fa-folder"></i>
+        <a href="collection3.html"><h1>Collection 3</h1></a>
+      </div>
+      <div class="myTubeSidebar__hr"></div>
+    </div>
+    <div class="myTubeVideos">
+      <div class="myTubeVideo">
+        <iframe width="360" height="215"
+          src="https://www.youtube.com/embed/3xKsGKwdE1g"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        <div class="myTubeVideo__title">
+          <h1>Reflection: "When We Trust in God, He Acts" by Br.
+            Andres Carrillo - August 10, 2020 - CGMJCI</h1>
+        </div>
+        <div class="myTubeVideo">
+          <iframe width="360" height="215"
+            src="https://www.youtube.com/embed/Z9UJ-kJYLsQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <div class="myTubeVideo__title">
+            <h1>Jordan Peterson Leaves Joe Rogan SPEECHLESS On The
+              Bible!!!</h1>
+          </div>
+          <div class="myTubeVideo">
+            <iframe width="360" height="215"
+              src="https://www.youtube.com/embed/fcddr9t1LqM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div class="myTubeVideo__title">
+              <h1>My iPhone Lied To Me | Gabriel Iglesias</h1>
+            </div>
+          </div>
+        </div>
+
 
 </body>
 

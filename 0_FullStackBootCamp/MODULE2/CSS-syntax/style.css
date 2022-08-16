@@ -1,0 +1,10 @@
+h1 {
+  color: blue;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/* h1 (is the selector) which is followed by '{'
+   then comes the property ex.  color:
+   which is followed by the Value ex.  blue 
+  */

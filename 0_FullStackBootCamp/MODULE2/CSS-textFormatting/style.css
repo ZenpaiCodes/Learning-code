@@ -1,0 +1,25 @@
+body {
+  background-color: #181717ee;
+}
+
+h1 {
+  color: rgb(37, 172, 172);
+  text-align: center;
+  /* text-decoration: overline; */
+  text-decoration: underline;
+  /* text-decoration: line-through; */
+  text-transform: lowercase;
+}
+
+p {
+  color: rgb(37, 172, 172);
+  text-align: justify; /* text aligned to center-equally distributed */
+  text-indent: 50px; /* text indented 50px */
+  letter-spacing: 1.2px; /* letter spacing 1.2px */
+  line-height: 1.5; /* line height 1.5 */
+}
+
+a {
+  color: rgb(247, 209, 192);
+  text-decoration: none;
+}

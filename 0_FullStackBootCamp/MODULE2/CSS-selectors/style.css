@@ -1,0 +1,50 @@
+h1 {
+  color: #504921;
+}
+
+h2 {
+  color: #212850;
+}
+
+em {
+  color: #503121;
+}
+
+button {
+  background-color: #285021;
+  color: white;
+  border: 1px solid #285021;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+input {
+  background: rgb(95, 126, 155);
+  border: 1px solid rgb(95, 126, 155);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+input:focus {
+  color: #2d2700;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+  border: 1px solid red;
+}
+
+.btn-secondary {
+  background-color: red;
+  color: white;
+  border: 1px solid blue;
+}
+
+#textInput {
+  background-color: #f3d40a;
+}
+
+#searchInput {
+  background-color: #4d4a3c1c;
+}
