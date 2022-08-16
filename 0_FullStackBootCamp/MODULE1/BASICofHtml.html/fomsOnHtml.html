@@ -10,7 +10,17 @@
 </head>
 
 <body>
+  <!-- action is the url that the form will be sent to.
+     Also, action could be the file the form will be sent to -->
   <form action="">
+
+    <!-- target is the name of the window that the form will be sent to. EXAMPLE send user to new Thank you page! -->
+    <!-- <form ********* target="_blank" ***************> -->
+
+    <!-- method is the type of data that will be sent to the action. ******* method="get" or method="post"******* -->
+
+    <!-- <form action="" method="get"> appends information into the URL. NEVER USE FOR SENSIBLE DATA-->
+
     <label for="">First Name</label><br>
     <input type="text" name="firstName" id="firstName"><br>
 
@@ -46,6 +56,7 @@
     <input type="password" name="confirmPassword"
       id="confirmPassword"><br>
 
+
     <br><br>
 
     <!-- CHECK BOXES -->
@@ -54,10 +65,54 @@
     <input name="answer" id="yes" type="checkbox" value="yes">
     <label for="male">Yes! sign me up.</label><br>
 
+    <br><br>
+
+    <label for="sweepstake">Pick which sweepstake you want to join.
+      You can only choose one so make it count :D </label><br>
+    <select name="sweepstake" id="sweepstake">
+      <option value="Select a sweepstake">Select a sweepstake</option>
+      <option value="Naruto Mange">Naruto Mange</option>
+      <option value="DBZ jacket">DBZ jacket</option>
+      <option value="One Piece Action figure">One Piece Action figure
+      </option>
+      <option value="PS5 Game">PS5 Game</option>
+    </select>
+
+
 
     <!-- SUBMIT BOTTONS -->
     <br><br>
     <input type="submit" value="Submit">
+
+    <br><br><br><br>
+    <h3>THIS SECTION IS FOR MORE INPUT ATTRIBUTES</h3>
+
+    <label for="attribute">Input Attribute</label><br><br>
+    <input id="attribute" type="text" value="sample data"
+      readonly><br>
+    <input id="attribute" type="text" value="sample data2"
+      disabled><br>
+    <input id="attribute" type="text" value="sample data3"
+      required><br>
+    <input id="attribute" type="text" value="sample data4"
+      autofocus><br>
+    <input id="attribute" type="text" value="sample data5"
+      size="50"><br>
+    <!-- size is the number of characters that will be displayed -->
+    <input id="attribute" type="text" value="sample data6"
+      maxlength="50"><br>
+    <!-- maxlength is the number of characters that will be displayed -->
+    <input id="attribute" type="text" value="sample data7"
+      minlength="50"><br>
+    <!-- minlength is the number of characters that will be displayed -->
+    <input id="attribute" type="text" value="sample data8"
+      pattern="[a-zA-Z0-9]{3}"><br>
+    <!-- pattern is the regex that will be used to validate the input -->
+    <input id="attribute" type="text" value="sample data9"
+      placeholder="sample data10"><br>
+    <!-- placeholder is the text that will be displayed when the input is empty -->
+
+
   </form>
 </body>
 
