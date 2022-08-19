@@ -1,0 +1,11 @@
+.box {
+  width: 600px;
+  height: 500px;
+  background-image: linear-gradient(to top, tomato, blue, yellow);
+}
+
+.box-2 {
+  width: 600px;
+  height: 500px;
+  background-image: radial-gradient(red, blue, yellow);
+}

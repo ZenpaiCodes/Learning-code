@@ -1,0 +1,59 @@
+nav {
+background-color: goldenrod;
+height: 50px;
+position: fixed;
+width: 100%;
+z-index: 100; /* z-index is used to set the stacking order of elements */
+}
+
+.container-relative {
+  border: 3px solid tomato;
+  height: 200px;
+  margin-bottom: 25px;
+}
+
+.container-absolute {
+  border: 3px solid tomato;
+  height: 200px;
+  position: relative;
+}
+
+
+.box-1 {
+  background-color: cornflowerblue;
+  width: 75px;
+  height: 75px;
+  /* relative to its normal position: ; */
+    /* Allowes us to us top-left-right-bottom */
+  position: relative;
+  left: 20px;
+  top: 50px;
+}
+
+.box-2 {
+  background-color: firebrick;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  z-index: 1;
+  bottom: 5px;
+  left: -10px;
+}
+
+.box-3 {
+  background-color: crimson;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 10px;
+}
+
+.box-4 {
+  background-color: darkcyan;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+

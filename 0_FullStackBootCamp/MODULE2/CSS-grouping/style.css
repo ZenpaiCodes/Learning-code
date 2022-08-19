@@ -1,0 +1,27 @@
+body {
+  background-color: dimgray;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  font-family: sans-serif;
+}
+
+p, label {
+  color:peru;
+}
+
+.contact-header {
+  color: yellowgreen;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px black;
+}
+
+.input-your-email, .enter-your-emal {
+  color: lightblue;
+  font-weight: 300;
+}
+
+.input-your-email {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,52 @@
+.button-1 {
+  /* single value - add marging to all sides */
+  margin: 40px;
+}
+
+.button-2 {
+  /* two values - add marging to top and bottom, left and right */
+  margin: 60px 15px;
+}
+
+.button-3 {
+  /* three values - add marging to top, left and right, bottom */
+  margin: 25px 30px 10px;
+}
+
+.button-4 {
+  /* four values - add marging to top, right, bottom, left */
+  margin: 20px 5px 30px 15px;
+}
+
+.rand-text {
+  color: rgb(13, 17, 16);
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+/* PADDING SECTION */
+input {
+  margin: 10px;
+  padding: 20px;
+}
+
+.button-5 {
+  padding: 50px 30px;
+}
+
+/*  WIDTH AND HEIGHT SECTION */
+.tittle {
+  background-color: blueviolet;
+  width: 30%;
+  height: 100px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.list-1 {
+  background-color: tomato;
+  width: 100px;
+  height: 75px;
+  max-height: 150px;
+  overflow: scroll; /* scroll, hidden, auto */
+}

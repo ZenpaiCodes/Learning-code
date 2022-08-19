@@ -1,0 +1,33 @@
+p {
+  /* borders require the property (border-style: ;) */
+  border-width: 2px;
+  border-style: solid; 
+}
+
+.dotted { 
+  border-style: dotted;
+}
+
+.groove {
+  border-radius: 5px;
+  border-style: groove;
+  border-color: red;
+  border-width: 10px;
+}
+
+.dashed {
+  border-style: dashed;
+}
+
+.inset {
+  border-style: groove;
+  border-color: rgba(85, 115, 155, 0.979);
+  border-width: 5px;
+}
+
+.mixed {
+  border-top-style: solid;
+  border-right-style: dotted;
+  border-bottom-style: dashed;
+  border-left-style: groove;
+}
