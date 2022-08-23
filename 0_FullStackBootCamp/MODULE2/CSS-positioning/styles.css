@@ -1,9 +1,22 @@
 nav {
-background-color: goldenrod;
-height: 50px;
-position: fixed;
-width: 100%;
-z-index: 100; /* z-index is used to set the stacking order of elements */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: goldenrod;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 100; /* z-index is used to set the stacking order of elements */
+}
+
+.sticker {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: rgba(55, 84, 97, 0.671);
+  border: 2px solid black;
+  z-index: 101;
 }
 
 .container-relative {

@@ -1,0 +1,96 @@
+/*
+GRID-TEMPLATE-AREAS: Define areas in grid layout
+GRID-TEMPLATE-COLUMNS: Define size of columns in grid 
+GRID-TEMPLATE-ROWS: Define size of rows in grid
+ */
+
+* {
+  font-family: 'Gentium Book Plus', serif;
+  font-family: 'Silkscreen', cursive;
+  font-size: 12px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: 
+    "nav nav nav nav"
+    "main main main sidebar"
+    "content-1 content-2 content-3 sidebar"
+    "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+                      /* fr is a fractional unit
+                      how much space that area should occupy*/
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.5fr;
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 5px;
+}
+
+nav {
+  background-color: tomato;
+  grid-area: nav;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+main {
+  background-color: #8B8C89;
+  grid-area: main;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+#sidebar {
+  background-color: #A3CEF1;
+  grid-area: sidebar;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+#content-1 {
+  background-color: #274C77;
+  grid-area: content-1;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+#content-2 {
+  background-color: #E7ECEF;
+  grid-area: content-2;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+#content-3 {
+  background-color: #333432;
+  grid-area: content-3;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+footer {
+  background-color: #3a26099f;
+  grid-area: footer;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+/* ADDING RESPONSIVENESS FOR MOBILE */
+@media screen and (max-width: 550px) {
+  .container {
+    grid-template-areas: 
+      "nav"
+      "main"
+      "sidebar"
+      "content-1"
+      "content-2"
+      "content-3"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr 0.5fr;
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    border-radius: 5px;
+  }
+}

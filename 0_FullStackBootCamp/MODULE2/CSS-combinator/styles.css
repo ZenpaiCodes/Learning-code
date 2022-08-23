@@ -1,0 +1,6 @@
+/*The space is the combinator; we are using a descendent selector*/
+section p {
+  background-color: lightblue;
+  font-size: 12px;
+}
+
