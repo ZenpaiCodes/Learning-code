@@ -1,0 +1,87 @@
+/* CHANGE COLOR ANIMATION */
+.div-1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+/* CHANGE COLOR + MOVEMENT ANIMATION */
+.div-2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  border: 1px solid black;
+  animation-name: example-1;
+  animation-duration: 10s;
+  position: relative;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes example-1 {
+  0% {
+    background-color: yellowgreen;
+    left: 0px; top: 0px}
+  25% {
+    background-color: tomato;
+    left: 200px; top: 0px}
+  50% {
+    background-color: blue;
+    left: 200px; top: 200px}
+  75% {
+    background-color: cyan;
+    left: 0px; top: 200px}
+  100% {
+    background-color: gray;
+    left: 0px; top: 0px}
+}
+
+/* MOVEMENT ANIMATION DIFFERENT SPEEDS */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  border: 1px solid black;
+  position: relative;
+  animation-name: example-2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example-2 {
+  0% {
+    background-color: yellowgreen;
+    left: 0px;}
+  100% {
+    background-color: gray;
+    left: 300px;}
+  }
+  
+.div-3 {
+  animation-timing-function: ease;
+}
+.div-4 {
+  animation-timing-function: linear;
+}
+.div-5 {
+  animation-timing-function: ease-in;
+}
+.div-6 {
+  animation-timing-function: ease-out;
+}
+.div-7 {
+  animation-timing-function: ease-in-out;
+}
+
