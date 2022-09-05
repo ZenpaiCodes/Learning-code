@@ -1,0 +1,44 @@
+* {
+  font-family: 'Silkscreen', cursive;
+}
+
+#palette {
+  color: #222831;
+  color: #2d4059;
+  color: #ff5722;
+  color: #eeeeee; 
+}
+
+.site-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(20, 100px);
+  gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+.header {
+  background-color: #0a515ad2;
+  grid-area: header;
+}
+
+.sidebar {
+  background-color: #ff5722;
+  grid-area: sidebar;
+}
+
+.main {
+  background-color: #eeeeee;
+  grid-area: main;
+}
+
+.footer {
+  background-color: #2d4059;
+  grid-area: footer;
+}

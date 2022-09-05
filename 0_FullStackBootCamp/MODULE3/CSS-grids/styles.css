@@ -1,0 +1,121 @@
+/* TITLE DECORATION */
+h1 {
+  background-color: rgba(175, 111, 100, 0.521);
+  transition: 0.5s;
+}
+
+h1:hover {
+  background-color: rgb(231, 217, 135);
+}
+
+/* GRID CONTAINER LAYOUT */
+.container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  column-gap: 10px;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.header {
+  background-color: aquamarine;
+  padding: 15px;
+}
+
+.main {
+  background-color: tomato;
+  padding: 15px;
+}
+
+.sidebar {
+  background-color: burlywood;
+  padding: 15px;
+}
+
+.footer {
+  background-color: lightblue;
+  padding: 15px;
+}
+
+/* ITEM IN CONTAINER LAYOUT */
+.items-in-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(100, 50px);
+  gap: 10px;
+}
+
+.item-1 {
+  background-color: aquamarine;
+  padding: 15px;
+  /* grid-column: 1/span 4; */
+  /* grid-column: 1/5; */
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 1/span 6;
+}
+
+.item-2 {
+  background-color: tomato;
+  padding: 15px;
+  grid-column: 3;
+  grid-row: 1/4;
+}
+
+.item-3 {
+  background-color: burlywood;
+  padding: 15px;
+  grid-column: 4;
+  grid-row: 1/4;
+}
+
+.item-4 {
+  background-color: lightblue;
+  padding: 15px;
+  grid-column: 3;
+  grid-row: 4/7;
+}
+
+.item-5 {
+  background-color: rgb(15, 45, 54);
+  padding: 15px;
+  grid-column: 4;
+  grid-row: 4/7;
+}
+
+.item-6 {
+  background-color: rgb(196, 76, 233);
+  padding: 15px;
+  grid-column: 1;
+  grid-row: 7/10;
+}
+
+.item-7 {
+  background-color: rgba(138, 182, 121, 0.726);
+  padding: 15px;
+  grid-column: 2;
+  grid-row: 7/10;
+}
+
+.item-8 {
+  background-color: rgb(128, 53, 53);
+  padding: 15px;
+  grid-column: 3/5;
+  grid-row: 7/13;
+}
+
+.item-9 {
+  background-color: rgb(207, 183, 44);
+  padding: 15px;
+  grid-column: 1;
+  grid-row: 10/13;
+}
+
+.item-10 {
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 15px;
+  grid-column: 2;
+  grid-row: 10/13;
+}

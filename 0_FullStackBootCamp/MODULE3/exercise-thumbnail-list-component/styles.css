@@ -1,0 +1,43 @@
+#palette-for-website {
+  color: #d3d6db;
+  color: #3a4750;
+  color: #303841;
+  color: #be3144;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  color: #d3d6db;
+}
+
+.main-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: #be3144 10px solid;
+  width: 350px;
+  height: 600px;
+}
+
+.thumbnail-1 {
+  background-image: url(./images/1.png);
+}
+
+.thumbnail-2 {
+  background-image: url(./images/2.png);
+}
+
+.thumbnail-3 {
+  background-image: url(./images/3.png);
+}
+
+.thumbnail-4 {
+  background-image: url(./images/4.png);
+}
+
+.thumbnail-5 {
+  background-image: url(./images/5.png);
+}
