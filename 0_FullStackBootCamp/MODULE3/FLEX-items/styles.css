@@ -1,0 +1,31 @@
+.box {
+  display: flex;
+  border: 2px solid black;
+}
+
+.box > div {
+  height: 100px;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+
+.one {
+  /* flex-basis: 25%; */
+  flex: 1;
+}
+
+.two {
+  /* flex-basis: 50%; */
+  flex: 2;
+}
+
+.three {
+  /* flex-basis: 30%; */
+  flex: 1;
+}
+
+.four {
+  /* flex-basis: 100%; */
+  flex: 3;
+}

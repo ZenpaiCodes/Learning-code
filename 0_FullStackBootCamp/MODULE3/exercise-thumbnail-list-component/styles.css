@@ -6,38 +6,56 @@
 }
 
 * {
+  font-family: 'Abril Fatface';
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
   color: #d3d6db;
+  background-color: black;
 }
 
 .main-container {
   display:flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #303841;
   border: #be3144 10px solid;
   width: 350px;
-  height: 600px;
+  height: 850px;
+  margin: 20px;
+  padding: 10px;
 }
 
-.thumbnail-1 {
-  background-image: url(./images/1.png);
+h1 {
+  text-align: center;
+  margin: 5px;
+  background-color: #be3144;
+  transition: 0.5s;
 }
 
-.thumbnail-2 {
-  background-image: url(./images/2.png);
+.thumbnail {
+  display: flex;
+  align-items: center;
+  background-color: #303841;
 }
 
-.thumbnail-3 {
-  background-image: url(./images/3.png);
+img {
+  border: #3a4750 10px solid;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 15px;
 }
 
-.thumbnail-4 {
-  background-image: url(./images/4.png);
+p {
+  background-color: #3a4750;
+  border: #3a4750 0.1px solid;
+  border-radius: 10px;
+  padding: 5px;
 }
 
-.thumbnail-5 {
-  background-image: url(./images/5.png);
+hr {
+  border: #be3144 1px solid;
+  width: 100%;
+  box-shadow: 0 0 20px 1px rgb(163, 0, 0);
 }
