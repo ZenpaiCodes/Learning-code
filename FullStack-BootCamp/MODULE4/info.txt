@@ -1,0 +1,39 @@
+Terminal commands
+
+1- cd (change directory)
+	Ex: cd Desktop
+		Just typing -  cd  - will take us all the way back home.
+
+2- ls (Short List)
+	Ex: cd Desktop  → ls   (this will lest all files in that directory)
+
+3- cd ..  (2 piriods)
+	This allows us to go back 1 level 
+
+4- mkdir _____  (this command creates a folder on current directory)
+	Mkdir (make directory) followed by the new folder name
+
+5- touch
+	Creates files in the current directory
+
+6- cd folder-name/   (to go in to a folder that in a folder)
+
+7- mv   (move file to another directory)
+
+8- cp   (copy file)
+
+9- mv   (ALSO used to change file/folder name)
+
+10- clear  (clears terminal)
+
+*****NOTICE:: WHEN DELETING THROUGH THE TERMINAL, THE FILE IS COMPLETELY REMOVED FROM THE COMPUTER*****
+
+11- rm      (remove file ex:  rm file-name.txt)
+
+12- rm      (to delete multiple files just write the names ex:  rm  file-1.txt file-2.txt file-3.txt)
+
+13- rmdir   (removes EMPTY directory ex: rmdir directory-name)
+
+14- rm -R   (removes DIR WITH FILES in it ex:: rm -R directory-name)
+
+
