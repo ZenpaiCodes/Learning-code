@@ -11,13 +11,17 @@ body {
   line-height: 25px;
 }
 
+@media (max-width: 1024px) {
+  body {
+    background-color: white;
+  }
+}
+
 .site-grid {
   background-color: white;
-  border: 1px solid rgb(43, 41, 41);
   margin-right: 15px;
   margin-left: 15px;
-  /* grid-template-columns: (3, 1fr);
-  grid-template-rows: (6, 1fr); */
+  min-width: 375px;
 }
 
 .header {
@@ -25,6 +29,16 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 10px 15px 10px;
+    min-width: 375px;
+  }
 }
 
 .logo {
@@ -88,7 +102,13 @@ body {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 768px) {
+  .about-us > h5 {
+    min-width: 365px;
+  }
+}
+
+@media (max-width: 1024px) {
   .about-us {
     padding: 3rem 5rem;
   }
@@ -135,6 +155,13 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .image {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .image > img {
   max-width: 100%;
   height: 230px;
@@ -145,6 +172,7 @@ body {
 @media (max-width: 1024px) {
   .image > img {
     min-width: 300px;
+    max-width: 346px;
   }
 }
 
@@ -163,6 +191,12 @@ body {
   padding-right: 30px;
 }
 
+@media (max-width: 1024px) {
+  .image-description > p{
+    padding: 10px 15px;
+  }
+}
+
 .our-team {
   display: flex;
   flex-direction: column;
@@ -179,10 +213,31 @@ body {
   }
 }
 
+.our-team-introduction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 .our-team > h3 {
   font-size: 40px;
   font-weight: normal;
   color: rgba(77, 75, 75, 0.904);
+}
+
+@media (max-width: 768px) {
+  .our-team > h3, p {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .team-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 .team-cards {
@@ -192,10 +247,38 @@ body {
   margin-bottom: 50px;
 }
 
+@media (max-width: 1024px) {
+  .team-cards {
+    max-width: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 0px;
+  }
+}
+
 .card {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.picture > img {
+  max-width: 100%;
+  min-width: 159px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+@media (max-width: 1024px) {
+  .picture > img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 466px) {
+  .picture > img {
+    max-width: 180px;
+  }
 }
 
 .name > h4 {
@@ -222,3 +305,87 @@ body {
   color: rgba(88, 86, 86, 0.993);
 }
 
+.footer-social-media-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgb(10, 10, 10);
+  color: white;
+  padding: 1rem;
+}
+
+.footer-social-media {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.social-icon-and-name h3 {
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .footer-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+}
+
+.social-icon-and-name {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon-and-name > h3 {
+  margin-left: 10px;
+}
+
+.social-icon-and-name > .fa {
+  background-color: rgba(167, 167, 167, 0.747);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.842);
+  width: 30px;
+  min-height: 30px;
+  font-size: 15px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 4rem 0rem 6rem 0rem;
+}
+
+@media (max-width: 768px) {
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: 1px solid rgba(167, 167, 167, 0.11);
+  width: 90%;
+  margin: auto;
+}
+
+.footer-copyright {
+  padding: 1rem;
+  text-align: center;
+}
