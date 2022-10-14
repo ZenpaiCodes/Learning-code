@@ -1,11 +1,12 @@
+/* Section-1 Navbar */
 .navbar {
-  background-color: tomato;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   transition: ease-in-out 0.3s;
+  padding: 1rem;
 }
 
 [aria-controls="navbarDropdown"] {
@@ -17,6 +18,7 @@
   align-items: center;
 }
 
+/* Section-2 brand */
 .nav-brand {
   margin-right: auto;
   width: 100%;
@@ -26,15 +28,23 @@
   transition: ease-in-out 0.3s;
 }
 
+/* Section-3 navbar links */
 .nav-links-container {
   display: flex;
   align-items: center;
 }
 
-.nav-link {
+.nav-link a {
   color: white;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: 'Hind', sans-serif;
+  text-transform: uppercase;
+  margin-right: 2.5rem;
+  line-height: 1.25rem;
 }
 
+/* Section-4 header text */
 .bg-header {
   background-image: url("../assets/images/bg-header-1.jpg");
   background-color: var(--footer);
@@ -43,6 +53,7 @@
   background-position: 50% 20%;
   position: relative;
   z-index: 1;
+  padding: 4.6875rem 0;
 }
 
 .bg-header::before {
@@ -57,4 +68,13 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
+
+.hero-header {
+  color: white;
+  font-size: 1.50rem;
+}
+

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+          /* <!-- Section-1 HEADER AND NAV --> */
+body {
+  background-color: rgb(62, 42, 134);
+}
+
+/* <!-- geometric-symbols --> */
+.geometric-symbols {
+  padding: 6.5px;
+  display: flex;
+  justify-content: baseline;
+  justify-content: end;
+  gap: 8px;
+  color: rgb(156, 149, 179);
+}
+
+#triangle {
+  rotate: 90deg;
+}
+
+/* <!-- header text and icons --> */
+.nav-header {
+  background-color: rgb(90, 61, 197);
+  color: white;
+  padding: 20px;
+  display: flex;
+  font-size: 18px;
+}
+
+.hg-and-header {
+  display: flex;
+  margin-right: auto;
+  gap: 30px;
+}
+
+/* <!-- fa-fa search icon --> */
+.search-and-settings {
+  display: flex;
+  gap: 35px;
+}
+
+          /* <!-- Section-2 FORM --> */
+.form-container {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.form-inputs div {
+  margin-bottom: 20px;
+  min-width: 300px;
+}
+
+input {
+  width: 80%;
+  padding: 18px 12px;
+  border: 1px solid rgb(156, 149, 179);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.dark-field {
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgba(236, 228, 218, 0.671);
+    border-radius: 5px 5px 0 0;
+}
+
+.phone-and-laber-container {
+  display: flex;
+  gap: 5px;
+}
+
+#phone {
+  width: 45%;
+  margin-right: 15px;
+}
+
+#label {
+  width: 28%;
+  border: 1px solid rgb(156, 149, 179);
+  border-radius: 5px;
+  font-size: 18px;
+  color: gray;
+  padding: 10px;
+}
+
+img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+#img-none {
+  color: rgba(240, 248, 255, 0);
+}
+
+.state-and-zip-container {
+  display: flex;
+  gap: 3px;
+}
+
+#state {
+  width: 40%;
+  font-size: 18px;
+  color: gray;
+  padding: 10px;
+  margin-right: auto;
+}
+
+#zip {
+  width: 35%;
+}

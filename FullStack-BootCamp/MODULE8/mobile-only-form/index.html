@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Form</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Section-1 HEADER AND NAV -->
+    <div class="nav-container">
+      <!-- geometric-symbols -->
+      <div class="geometric-symbols">
+        <i class='fa fa-square'></i>
+        <i class='fa fa-circle'></i>
+        <i id="triangle" class='fa fa-play'></i>
+      </div>
+      <!-- header text and icons -->
+      <nav class="nav-header">
+        <div class="hg-and-header">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <header>Contacts</header>
+        </div>
+        <!-- fa-fa search icon -->
+        <div class="search-and-settings">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+      </nav>
+    </div>
+    <!-- Section-2 FORM -->
+    <div class="form-container">
+      <form action="">
+        <div class="form-inputs">
+          <div>
+            <img src="./images/user-svgrepo-com.svg" alt="">
+            <input class="field dark-field" type="text" placeholder="Name">
+          </div>
+          <div class="phone-and-laber-container">
+            <img src="./images/phone-svgrepo-com.svg" alt="">
+            <input id="phone" class="field light-field" type="text"
+              placeholder="Phone Number">
+            <select id="label" class="field light-field" type="text">
+              <option value="">Label</option>
+            </select>
+          </div>
+          <div>
+            <img src="./images/location-svgrepo-com.svg" alt="">
+            <input class="field dark-field" type="text" placeholder="address">
+          </div>
+          <div>
+            <img id="img-none" src="./images/os-x-svgrepo-com.svg" alt="">
+            <input class="field light-field" type="text" placeholder="City">
+          </div>
+          <div class="state-and-zip-container">
+            <img id="img-none" src="./images/os-x-svgrepo-com.svg" alt="">
+            <!-- state -->
+            <select id="state" class="field dark-field" type="text">
+              <option value="">State</option>
+            </select>
+            <input id="zip" class="field dark-field" type="text"
+              placeholder="Zip">
+          </div>
+          <div>
+            <img src="./images/email-mail-svgrepo-com.svg" alt="">
+            <input class="field light-field" type="text" placeholder="Email">
+          </div>
+          <div>
+            <img src="./images/cake-svgrepo-com.svg" alt="">
+            <input class="field dark-field" type="text" placeholder="Birthday"
+              onfocus="(this.type='date')">
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </body>
+
+</html>
