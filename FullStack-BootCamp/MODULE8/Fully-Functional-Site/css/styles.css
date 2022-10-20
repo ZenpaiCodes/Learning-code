@@ -1,4 +1,4 @@
-/* Section-1 Navbar */
+/* <!-- Section-1 NAV PLUS HEADER --> */
 .navbar {
   position: fixed;
   top: 0;
@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-/* Section-2 brand */
+/* brand */
 .nav-brand {
   margin-right: auto;
   width: 100%;
@@ -28,7 +28,7 @@
   transition: ease-in-out 0.3s;
 }
 
-/* Section-3 navbar links */
+/* navbar links */
 .nav-links-container {
   display: flex;
   align-items: center;
@@ -44,9 +44,16 @@
   line-height: 1.25rem;
 }
 
-/* Section-4 header text */
+/* header text ( plus SECTION-4 video-demo) */
 .bg-header {
   background-image: url("../assets/images/bg-header-1.jpg");
+}
+.video-demo {
+  background-image: url("../assets/images/bg-demo.jpg");
+}
+
+.bg-header,
+.video-demo  {
   background-color: var(--footer);
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,6 +63,7 @@
   padding: 4.6875rem 0;
 }
 
+/* darkens image */
 .bg-header::before {
   background-image: linear-gradient(
     30deg,
@@ -78,3 +86,154 @@
   font-size: 1.50rem;
 }
 
+/* <!-- Section-2  WHY CHOOSE ME --> */
+.why-me {
+padding: 30px 0;
+}
+
+.why-me-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.why-me-wrapper div {
+  flex: 1;
+}
+
+.block-text {
+  padding-right: 100px;
+  font-family: hind;
+  font-weight: 500;
+}
+
+.block-text h2 {
+  color: var(--font-color-dark);
+  font-size: 3.25rem;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  line-height: 1.15;
+}
+
+/* <!-- Section-3  SERVICES (GRID) --> */
+.bg-contrast {
+  background-color: var(--contrast);
+}
+/* adding opacity to border */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 125px 0;
+}
+
+.service-card {
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-shape {
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+.bg-color-1 {
+background-image: linear-gradient(90deg, 
+#9ccdf3 0%, #94aafd 100%);
+}
+
+.bg-color-2 {
+  background-image: linear-gradient(90deg, 
+  #55ed60 0%, #4bdbdb 100%);
+}
+
+.bg-color-3 {
+  background-image: linear-gradient(90deg, 
+  #fda498 0%, #f58b9e 100%);
+}
+
+.bg-color-4 {
+  background-image: linear-gradient(90deg, 
+  #f2a7ca 0%, #c289f4 100%);
+}
+
+.bg-color-5 {
+  background-image: linear-gradient(90deg, 
+  #ffc187 0%, #fe93a7 100%);
+}
+
+.bg-color-6 {
+  background-image: linear-gradient(90deg, 
+  #a1ecff 0%, #7dbcff 100%);
+}
+
+.service-card h3 {
+  color: var(--font-color-dark);
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* <!-- Section-4  VIDEO DEMO --> */
+.video-demo {
+  text-align: center;
+}
+
+.video-demo .block-text {
+  padding-right: 0;
+  padding-top: 40px;
+}
+
+.video-demo .block-text h2,
+.video-demo .block-text p {
+  color: white;
+}
+
+.video-demo .block-text h2 {
+  margin-bottom: 30px;
+}
+
+.video-demo .block-text p {
+  margin-bottom: 75px;
+}
+
+.video-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 20px rgba(57,166,251,0.3);
+  rotate: 1deg;
+}
+
+.video-btn img {
+  width: 80px;
+  height: 80px;
+}
+
+.video-box > img {
+  max-width: 550px;
+  border-radius: 5px;
+  margin-bottom: -125px;
+}
+
+/* <!-- Section-5  PRICES --> */
+.section-5-contrast {
+  padding: 150px 0;
+  margin: 0 auto;
+}
+
+.block-text.pricing-header {
+  text-align: center;
+  padding-right: 0;
+}
