@@ -88,7 +88,7 @@
 
 /* <!-- Section-2  WHY CHOOSE ME --> */
 .why-me {
-padding: 30px 0;
+padding: var(--size-30) 0;
 }
 
 .why-me-wrapper {
@@ -101,7 +101,7 @@ padding: 30px 0;
 }
 
 .block-text {
-  padding-right: 100px;
+  padding-right: var(--size-100);
   font-family: hind;
   font-weight: 500;
 }
@@ -110,8 +110,8 @@ padding: 30px 0;
   color: var(--font-color-dark);
   font-size: 3.25rem;
   font-weight: 600;
-  margin-top: 8px;
-  margin-bottom: 15px;
+  margin-top: var(--size-8);
+  margin-bottom: var(--size-15);
   line-height: 1.15;
 }
 
@@ -123,25 +123,25 @@ padding: 30px 0;
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 125px 0;
+  gap: var(--size-20);
+  padding: var(--size-125) 0;
 }
 
 .service-card {
-  padding: 30px;
+  padding: var(--size-30);
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   background: white;
-  border-radius: 5px;
+  border-radius: var(--size-5);
   cursor: pointer;
 }
 
 .card-shape {
-  width: 70px;
-  height: 70px;
+  width: var(--size-70);
+  height: var(--size-70);
   display: block;
   border-radius: 50%;
   float: left;
-  margin-right: 15px;
+  margin-right: var(--size-15);
 }
 
 .bg-color-1 {
@@ -180,7 +180,7 @@ background-image: linear-gradient(90deg,
 }
 
 .service-card p {
-  font-size: 12px;
+  font-size: var(--size-12);
   font-weight: 500;
 }
 
@@ -191,7 +191,7 @@ background-image: linear-gradient(90deg,
 
 .video-demo .block-text {
   padding-right: 0;
-  padding-top: 40px;
+  padding-top: var(--size-40);
 }
 
 .video-demo .block-text h2,
@@ -200,11 +200,11 @@ background-image: linear-gradient(90deg,
 }
 
 .video-demo .block-text h2 {
-  margin-bottom: 30px;
+  margin-bottom: var(--size-30);
 }
 
 .video-demo .block-text p {
-  margin-bottom: 75px;
+  margin-bottom: var(--size-75);
 }
 
 .video-btn {
@@ -217,23 +217,88 @@ background-image: linear-gradient(90deg,
 }
 
 .video-btn img {
-  width: 80px;
-  height: 80px;
+  width: var(--size-80);
+  height: var(--size-80);
 }
 
 .video-box > img {
-  max-width: 550px;
-  border-radius: 5px;
-  margin-bottom: -125px;
+  max-width: var(--size-550);
+  border-radius: var(--size-5);
+  margin-bottom: -7.813rem;
 }
 
-/* <!-- Section-5  PRICES --> */
+/* <!-- Section-5  PRICING PLANS --> */
 .section-5-contrast {
-  padding: 150px 0;
+  padding: var(--size-150) 0;
   margin: 0 auto;
 }
 
 .block-text.pricing-header {
   text-align: center;
   padding-right: 0;
+  margin: 3rem 0 6rem 0;
+}
+
+.pricing-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--size-20);
+  margin: auto;
+  align-items: flex-start;
+}
+
+.price-card {
+  background-color: white;
+  border-radius: var(--size-5);
+  padding: var(--size-16);
+}
+
+.price-card.featured {
+  box-shadow: 0 10px 20px rgba(82,179,255,0.35);
+  margin-top: -1rem;
+}
+
+.price-card h3 {
+  margin-top: var(--size-40);
+  font-size: var(--size-18);
+  color: var(--font-color-dark);
+  font-weight: 600;
+}
+
+.price-card .price {
+  font-size: var(--size-30);
+  font-weight: 600;
+  color: var(--font-color-link);
+}
+
+.price-card .checked {
+  color: var(--sucess);
+}
+
+.price-card .times {
+  color: var(--danger);
+}
+
+.price-card h3,
+.price-card .price,
+.price-card .billed {
+  text-align: center;
+}
+
+hr {
+  margin: 2rem 0 1rem;
+}
+
+.price-card li {
+  margin-bottom: var(--size-25);
+}
+
+.price-card .icon {
+  float: right;
+  font-weight: 600;
+}
+
+.plan-btn-wrapper {
+  text-align: center;
+  margin-top: var(--size-30);
 }
