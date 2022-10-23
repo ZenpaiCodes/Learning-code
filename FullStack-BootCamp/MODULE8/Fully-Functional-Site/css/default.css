@@ -158,3 +158,9 @@ img {
     max-width: 720px;
   }
 }
+
+@media (min-width: 768px) {
+  .testimonial-grid {
+    max-width: 650px;
+  }
+}
