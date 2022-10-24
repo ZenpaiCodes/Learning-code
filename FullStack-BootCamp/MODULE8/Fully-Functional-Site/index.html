@@ -24,7 +24,8 @@
   </head>
 
   <body>
-
+    <!--(Scroll TOP) button -->
+    <div id="pageTop"></div>
     <!-- Section-1 NAV PLUS HEADER -->
     <nav class="navbar nav">
       <div class="container">
@@ -454,6 +455,25 @@
       </section>
     </footer>
 
+    <!-- Scroll Top -->
+    <a id="scrollTop" href="#pageTop">
+      <img src="./assets/svg/up-arrow-upload-svgrepo-com.svg"
+        alt="Scroll-Up arrow">
+    </a>
   </body>
+
+  <!-- Javascript SCRIPT -->
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+
 
 </html>

@@ -43,6 +43,7 @@
   --size-36: 2.25rem;
   --size-38: 2.375rem;
   --size-40: 2.5rem;
+  --size-45: 2.8125rem;
   --size-50: 3.125rem;
   --size-60: 3.75rem;
   --size-70: 4.375rem;
@@ -60,6 +61,10 @@
   --size-550: 34.375rem;
   --size-600: 37.5rem;
   --size-700: 43.75rem;
+}   
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -72,6 +77,10 @@ body {
   color: var(--font-color-base);
   margin: 0;
   padding: 0;
+}
+
+#boton {
+  cursor: pointer;
 }
 
 *,

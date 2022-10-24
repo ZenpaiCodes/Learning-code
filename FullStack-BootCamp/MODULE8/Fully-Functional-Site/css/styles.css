@@ -395,11 +395,11 @@ hr {
 }
 
 .footer-top-grid {
-  color: white;
+  color: var(--contrast);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--size-50);
-  padding: var(--size-50);
+  padding: var(--size-80) var(--size-50);
 }
 
 .footer-col {
@@ -419,16 +419,52 @@ hr {
 .social-icons ul {
   display: flex;
   justify-content: space-between;
-  margin-top: var(--size-20);
+  margin-top: var(--size-10);
+  max-width: var(--size-125);
 }
 
 .social-icons img {
-  width: var(--size-20);
+  width: var(--size-15);
+}
+
+/* Services (2nd column) */
+.services-wrapper h5 {
+  margin-bottom: var(--size-2);
+}
+
+.services-wrapper p {
+  color: #858497;
+  font-size: var(--size-12);
+}
+
+/* Recent post (3rd column) */
+.recent-posts {
+  display: flex;
+  gap: var(--size-3);
+  margin: var(--size-15) 0;
+}
+
+.recent-posts img {
+  max-width: var(--size-125);
+}
+
+.recent-post-text h6 {
+  margin-top: 0;
+}
+
+.recent-post-text a {
+  color: var(--contrast);
+  font-size: var(--size-10);
+}
+
+.recent-post-text span {
+  color: var(--contrast);
+  font-size: var(--size-10);
 }
 
 /* <!-- footer bottom --> */
 .footer-bottom {
-  padding: var(--size-30) 0;
+  padding: var(--size-15) 0;
 }
 
 .footer-bottom-wrapper {
@@ -446,4 +482,14 @@ hr {
 .footer-bottom-links a {
   color: white;
   margin-right: var(--size-10);
+}
+
+/* <!-- Section 8 funciton arrow --> */
+#scrollTop img {
+  width: var(--size-45);
+  position: fixed;
+  bottom: var(--size-1);
+  right: var(--size-3);
+  z-index: 100;
+  cursor: pointer;
 }
