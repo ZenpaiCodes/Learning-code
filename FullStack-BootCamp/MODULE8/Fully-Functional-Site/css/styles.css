@@ -184,7 +184,7 @@ background-image: linear-gradient(90deg,
   font-weight: 500;
 }
 
-/* <!-- Section-4  VIDEO DEMO --> */
+/* <!-- Section-4  OUR-STORY, VIDEO DEMO --> */
 .video-demo {
   text-align: center;
 }
@@ -404,6 +404,7 @@ hr {
 
 .footer-col {
   justify-self: center;
+  max-width: 250px;
 }
 
 .contact-info img {
