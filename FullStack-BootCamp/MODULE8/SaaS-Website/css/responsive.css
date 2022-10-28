@@ -1,9 +1,25 @@
 @media screen and (max-width: 1024px) {
   .nav-header-bg {
-    background: linear-gradient(110deg,
+    height: var(--size-500);
+    background: linear-gradient(115deg,
         rgb(217, 217, 217, 0.05) 15% 40%,
         rgb(217, 217, 217, 0.5) 66%,
         #E1E7Ef 66% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  }
+
+  /* <!-- Section-1 navbar --> */
+  .nav-logo img {
+    width: var(--size-150);
+  }
+
+  /* <!-- Section-2 header --> */
+  .header-multi-logo-icons .header-company-icon img {
+    width: var(--size-38);
+  }
+
+  /* <!-- SECTION-3 features --> */
+  .features-card {
+    padding: var(--size-18);
   }
 }
