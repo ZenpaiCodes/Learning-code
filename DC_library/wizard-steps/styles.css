@@ -1,0 +1,39 @@
+.wizard-step-container {
+  --wizard-step-color: #e0e0e0;
+  --wizard-step-active-color: lime;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.wizard-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--wizard-step-color);
+  transition: 0.5s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wizard-circle::after {
+  content: "";
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background-color: blue;
+  transition: 0.5s all;
+}
+
+.wizard-circle:hover {
+  background-color: var(--wizard-step-active-color);
+}
+
+.wizard-line {
+  width: 20%;
+  height: 0.1rem;
+  background-color: var(--wizard-step-color);
+}

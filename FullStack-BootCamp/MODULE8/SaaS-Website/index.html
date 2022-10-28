@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -18,9 +18,10 @@
   </head>
 
   <body>
-    <!-- Section-1 navbar and header -->
     <div class="container">
-      <!-- navbar -->
+      <!-- navbar and header background color -->
+      <div class="nav-header-bg"></div>
+      <!-- SECTION-1 navbar -->
       <div class="navbar">
         <div class="nav-logo">
           <img src="./assets/project_logo/logo.svg" alt="Front-logo">
@@ -28,14 +29,158 @@
         <nav id="nav-menu">
           <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Account</a></li>
+            <li><a class="nav-features" href="">Features</a></li>
+            <li><a href="">Learn</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Hire us</a></li>
           </ul>
-          <button>Buy Now</button>
+          <button class="btn-base">Buy Now</button>
         </nav>
+      </div> <!-- END navbar -->
+
+      <!-- SECTION-2 header -->
+      <div class="header-statement-logos">
+        <!-- header statement -->
+        <div class="header-statement">
+          <div class="header-text">
+            <h1>Empowering <br> teams with <br> freedom</h1>
+            <p>Own the unlimited power of web development</p>
+          </div>
+          <div class="header-btn">
+            <button class="btn-base btn-play-img">
+              <img src="./assets/svg/play-svgrepo-com (1).svg" alt="">
+              Play Video
+            </button>
+            <span>Learn More</span>
+          </div>
+        </div>
+        <!-- header-logos -->
+        <div class="header-logos-container">
+          <div class="header-multi-logo-icons">
+            <!-- top icons -->
+            <div id="google-icon" class="header-company-icon">
+              <img src="./assets/logo_icons/google.png" alt="google-icon">
+            </div>
+            <div id="atlastis-icon" class="header-company-icon hd-large-icon">
+              <img src="./assets/logo_icons/atlassian.png" alt="atlassian-icon">
+            </div>
+            <div id="asana-icon" class="header-company-icon hd-large-icon">
+              <img src="./assets/logo_icons/asana.png" alt="asana-icon">
+            </div>
+          </div>
+          <!-- middle icons -->
+          <div class="header-multi-logo-icons middle-icons">
+            <div id="paypal-icon" class="header-company-icon hd-large-icon">
+              <img src="./assets/logo_icons/paypal.jpg" alt="google-icon">
+            </div>
+            <div id="weave-icon" class="header-company-icon hd-large-icon">
+              <img src="./assets/logo_icons/weave.png" alt="atlassian-icon">
+            </div>
+          </div>
+          <!-- bottom icons -->
+          <div class="header-multi-logo-icons bottom-icons">
+            <div id="google-a-icon" class="header-company-icon">
+              <img src="./assets/logo_icons/google-A.png" alt="google-icon">
+            </div>
+            <div id="calender-icon" class="header-company-icon hd-large-icon">
+              <img src="./assets/logo_icons/calendar.png" alt="atlassian-icon">
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div> <!-- END Container for nav and header -->
+
+    <!-- SECTION-3 features -->
+    <div class="container">
+      <div class="features-heading">
+        <h2>Key Benefits</h2>
+        <p>Design faster with a growing array of beautiful templates</p>
+      </div>
+      <div class="features-cards-container">
+        <div class="features-card wrap-sdw-box">
+          <img src="./assets/icons/responsive.svg" alt="RESPONSIVE-IMAGE">
+          <h3>Responsive</h3>
+          <p>It is a long established <br> fact that a reader will be <br>
+            distracted by the readable <br> content of a page when <br>
+            looking a its layout.</p>
+          <br>
+          <span>Learn More</span>
+        </div>
+        <div class="features-card wrap-sdw-box">
+          <img src="./assets/icons/customizable.svg" alt="RESPONSIVE-IMAGE">
+          <h3>Costumizable</h3>
+          <p>It is a long established <br> fact that a reader will be <br>
+            distracted by the readable <br> content of a page when <br>
+            looking a its layout.</p>
+          <br>
+          <span>Learn More</span>
+        </div>
+        <div class="features-card wrap-sdw-box">
+          <img src="./assets/icons/premium.svg" alt="RESPONSIVE-IMAGE">
+          <div class="features-card-header">
+            <h3>Premium</h3>
+            <button class="btn-base">sketch</button>
+          </div>
+          <p>It is a long established <br> fact that a reader will be <br>
+            distracted by the readable <br> content of a page when <br>
+            looking a its layout.</p>
+          <br>
+          <span>Learn More</span>
+        </div>
+        <div class="features-card wrap-sdw-box">
+          <img src="./assets/icons/documentation.svg" alt="RESPONSIVE-IMAGE">
+          <h3>Documentation</h3>
+          <p>It is a long established <br> fact that a reader will be <br>
+            distracted by the readable <br> content of a page when <br>
+            looking a its layout.</p>
+          <br>
+          <span>Learn More</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION-4 software btn and image -->
+    <div class="container software-btn-img">
+      <div class="software-btn">
+        <h2>Front makes you look at things <br>
+          from a different prospectives</h2>
+        <div class="soft-btn">
+          <button class="btn-base btn-play-img">
+            <img src="./assets/svg/play-svgrepo-com (1).svg" alt="">
+            Play Video
+          </button>
+        </div>
+      </div>
+      <div class="software-img">
+        <img src="./assets/banners/banner_one.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- SECTION-5 why-front: includes wizard steps-->
+    <div class="container">
+      <div class="why-font-text">
+        <h2>Why Front?</h2>
+        <p>Front is an incredible beautiful, fully responsive, and mobile-first
+          project on <br> the web - it is the starting point for creative sites
+        </p>
+      </div>
+      <div class="wizard-step-container">
+        <div class="wizard-circle"></div>
+        <div class="wizard-line"></div>
+        <div class="wizard-circle"></div>
+        <div class="wizard-line"></div>
+        <div class="wizard-circle"></div>
+        <div class="wizard-line"></div>
+        <div class="wizard-circle"></div>
+      </div>
+      <div class="why-font-comp-text">
+        <h3 id="text-first">Basic elements</h3>
+        <h3>Components</h3>
+        <h3>Combined components</h3>
+        <h3 id="text-last">Page layouts</h3>
+      </div>
+    </div>
 
   </body>
 

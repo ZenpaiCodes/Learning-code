@@ -1,0 +1,17 @@
+/* BOX-SHADOW #1 */
+.wrap-sdw-box {
+  box-shadow: 5px 13px 20px rgba(0, 0, 0, 0.25);
+}
+.features-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.features-card {
+  padding: 30px;
+}
+.features-card img {
+  width: 100px;
+}
+
+/* BOX-SHADOW #2 */

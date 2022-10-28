@@ -1,0 +1,16 @@
+/* BUTTON #1 */
+.btn-base {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 12px;
+  background-color: var(--color-link);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #2476FF;
+}
+
+/* BUTTON #2 */

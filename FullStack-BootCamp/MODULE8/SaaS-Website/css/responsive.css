@@ -1,0 +1,9 @@
+@media screen and (max-width: 1024px) {
+  .nav-header-bg {
+    background: linear-gradient(110deg,
+        rgb(217, 217, 217, 0.05) 15% 40%,
+        rgb(217, 217, 217, 0.5) 66%,
+        #E1E7Ef 66% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  }
+}
