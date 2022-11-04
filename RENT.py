@@ -4,7 +4,7 @@ import datetime
 # timedelta is the difference between two dates
 # *******CHANGE DATE HERE********
 weeks = []
-start_date = datetime.date(2022, 8, 31)
+start_date = datetime.date(2022, 10, 26)
 
 
 while len(weeks) < 15:

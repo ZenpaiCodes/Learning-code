@@ -1,3 +1,4 @@
+/* 1024px RESOLUTION */
 @media screen and (max-width: 1024px) {
   .nav-header-bg {
     height: var(--size-500);
@@ -21,5 +22,340 @@
   /* <!-- SECTION-3 features --> */
   .features-card {
     padding: var(--size-18);
+  }
+
+  .features-cards-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features-card {
+    max-width: var(--size-200);
+  }
+}
+
+/* --------------------------------- */
+/* 768px RESOLUTION */
+@media screen and (max-width: 768px) {
+
+  /* <!-- Section-1 navbar --> */
+  #nav-menu {
+    display: none;
+  }
+
+  /* <!-- Section-2 header --> */
+  .header-statement {
+    padding: var(--size-40) 0;
+  }
+
+  .header-statement-logos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-statement .header-btn {
+    justify-content: center;
+  }
+
+  /* header logos */
+  .header-logos-container {
+    padding: 0 var(--size-40);
+  }
+
+  .header-multi-logo-icons {
+    margin-top: var(--size-40);
+  }
+
+  .header-multi-logo-icons #paypal-icon {
+    margin-right: 40%;
+    margin-left: 8%;
+  }
+
+  .header-multi-logo-icons .header-company-icon img {
+    width: var(--size-50);
+  }
+
+  .resp-big-logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: var(--size-90);
+    height: var(--size-90);
+  }
+
+  .bottom-icons #calender-icon {
+    margin-top: var(--size-30);
+  }
+
+  /* <!-- SECTION-3 features --> */
+  .features-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--size-40);
+  }
+
+  .features-card {
+    max-width: var(--size-300);
+  }
+
+  /* <!-- SECTION-4 software btn and image --> */
+  .software-btn-img {
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .software-btn {
+    text-align: center;
+  }
+
+  .soft-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--size-10);
+    padding-bottom: var(--size-30);
+  }
+
+  .soft-btn button {
+    font-weight: 200;
+  }
+
+  /* <!-- SECTION-5 why-front --> */
+  .why-front-wrapper {
+    padding-top: var(--size-5);
+  }
+
+  .why-front-comp-text {
+    gap: 8%;
+  }
+
+  /* < !-- SECTION-6 Video --> */
+  .video-wrapper {
+    padding-bottom: var(--size-60);
+  }
+
+  .video-wrapper a {
+    top: 35%;
+    left: 50%;
+  }
+
+  /* < !-- SECTION-7 HubSpot --> */
+  .hubspot-img-txt {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-stack-top {
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+
+  .img-stack-bot {
+    position: relative;
+    top: -320px;
+    left: 100px;
+    z-index: -10;
+  }
+
+  .hubspot-txt {
+    text-align: center;
+  }
+
+  /* < !-- SECTION-8 Trusted By --> */
+  .trust-logos img {
+    width: var(--size-80);
+  }
+
+  /* < !-- SECTION-9 Pricing --> */
+  .price-and-mini-cards {
+    flex-direction: column;
+  }
+
+  .price-card {
+    width: 100%;
+    text-align: center;
+    padding: var(--size-50) var(--size-40);
+  }
+
+  .price {
+    display: flex;
+    justify-content: center;
+  }
+
+  .price-card-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* < !-- SECTION-10 Contact Us --> */
+  .contact-us-wrapper {
+    flex-direction: column;
+    padding-top: var(--size-50);
+  }
+
+  .contact-us-testimonial {
+    display: flex;
+    align-content: center;
+    gap: var(--size-20);
+  }
+
+  .contact-us-testimonial hr {
+    max-width: var(--size-400);
+    margin: var(--size-20) 0;
+  }
+
+  .hire-us-wrapper {
+    display: grid;
+    align-content: center;
+  }
+
+  .testimonial-name {
+    padding: var(--size-26) 0;
+  }
+
+  .footer-top {
+    gap: 10px;
+  }
+
+  .footer-logo {
+    width: 40%;
+  }
+
+  .footer-links {
+    width: 60%;
+  }
+
+  /* < !-- SECTION-11 Footer --> */
+  .social-icons div {
+    width: var(--size-30);
+    height: var(--size-30);
+  }
+
+  .social-icons img {
+    width: var(--size-18);
+  }
+}
+
+
+/* --------------------------------- */
+/* 360px RESOLUTION */
+@media screen and (max-width: 360px) {
+  .container {
+    padding: 0 var(--size-15);
+  }
+
+  .header-logos-container {
+    width: 90%;
+    padding-left: 0;
+  }
+
+  /* <!-- Section-2 header --> */
+  .header-logos-container {
+    padding: var(--size-15) !important;
+  }
+
+  .header-multi-logo-icons {
+    gap: var(--size-50);
+    margin: 0 !important;
+  }
+
+  .header-multi-logo-icons #google-icon,
+  .header-multi-logo-icons #paypal-icon {
+    margin: 0 !important;
+  }
+
+  #google-icon img {
+    width: var(--size-26);
+  }
+
+  /* <!-- Section-2 header --> */
+  /* header logos */
+  .header-logos-container {
+    padding: 0 var(--size-40);
+  }
+
+  .header-multi-logo-icons #paypal-icon {
+    margin-right: 40%;
+    margin-left: 8%;
+  }
+
+  .header-multi-logo-icons .header-company-icon img {
+    width: var(--size-50);
+  }
+
+  .resp-big-logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: var(--size-70);
+    height: var(--size-70);
+  }
+
+  .top-icons #google-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: var(--size-60);
+    height: var(--size-60);
+  }
+
+  .middle-icons {
+    gap: var(--size-70);
+    margin: var(--size-24) 0 !important;
+  }
+
+  .bottom-icons #google-a-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: var(--size-60);
+    height: var(--size-60);
+    margin-right: var(--size-26);
+  }
+
+  .bottom-icons #calender-icon {
+    margin-top: var(--size-10);
+
+  }
+
+  /* <!-- SECTION-3 features --> */
+  .features-heading {
+    padding: var(--size-26);
+  }
+
+  .features-card {
+    padding: var(--size-18);
+  }
+
+  .features-cards-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .features-card {
+    max-width: var(--size-350);
+  }
+
+  /* < !-- SECTION-7 HubSpot --> */
+  .hubspot-img-stack {
+    /* width: 100%; */
+    padding: 0;
+    min-height: 100px;
+  }
+
+  /* < !-- SECTION-8 Trusted By --> */
+  .trust-logos {
+    flex-direction: column;
+    padding: var(--size-20) 0 var(--size-70) 0;
+  }
+
+  /* < !-- SECTION-10 Contact Us --> */
+  .contact-us-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
