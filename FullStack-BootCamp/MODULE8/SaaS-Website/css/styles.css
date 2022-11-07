@@ -21,6 +21,15 @@
   padding: var(--size-20) 0;
 }
 
+#nav-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  min-height: 100vh;
+  z-index: 10000 !important;
+  background-color: #01C9A7;
+}
+
 .nav-logo img {
   width: var(--size-200);
   float: left;
@@ -45,6 +54,10 @@
 
 #nav-menu .nav-features {
   color: var(--color-link);
+}
+
+.nav-logo a {
+  display: none;
 }
 
 /* <!-- Section-2 header --> */
@@ -227,6 +240,10 @@
 }
 
 /* <!-- SECTION-5 why-front --> */
+#wiz-flex-col {
+  display: none !important;
+}
+
 .why-front-wrapper {
   padding: var(--size-30) 0 var(--size-100) 0;
 }
@@ -253,7 +270,7 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-color: var(--wizard-step-color);
+  background-color: #ECF2FF;
   transition: 0.5s all;
 }
 
@@ -718,7 +735,7 @@ input[type="checkbox"]:checked:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FCF0F0;
+  background-color: #ECF2FF;
   width: var(--size-35);
   height: var(--size-35);
   border-radius: var(--size-5);
@@ -736,7 +753,7 @@ div.dark-bg {
 .social-icons select {
   width: var(--size-150);
   border: none;
-  background-color: #FCF0F0;
+  background-color: #ECF2FF;
   border-radius: var(--size-5);
   font-size: var(--size-16);
 }

@@ -8,26 +8,46 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="./">
+    <script defer src="app.js"></script>
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./script.js">
   </head>
 
   <body>
     <div class="container">
       <!-- navbar and header background color -->
+
+
+
       <div class="nav-header-bg"></div>
       <!-- SECTION-1 navbar -->
+      <!-- logo and hamburger -->
       <div class="navbar">
         <div class="nav-logo">
           <img src="./assets/project_logo/logo.svg" alt="Front-logo">
+          <!-- hamburger -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <script>
+            // hamburger menu
+            function myFunction() {
+              var x = document.getElementById("nav-menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+          </script> <!-- END hamburger menu -->
         </div>
-        <nav id="nav-menu">
+        <nav id="nav-menu" class="myLinks">
           <ul>
             <li><a href="">Home</a></li>
             <li><a class="nav-features" href="">Features</a></li>
@@ -38,6 +58,14 @@
           <button class="btn-base">Buy Now</button>
         </nav>
       </div> <!-- END navbar -->
+
+
+
+
+
+
+
+
 
       <!-- SECTION-2 header -->
       <div class="header-statement-logos">
@@ -106,7 +134,7 @@
         <h2>Key Benefits</h2>
         <p>Design faster with a growing array of beautiful templates</p>
       </div>
-      <div class="features-cards-container">
+      <div class="features-cards-container hidden">
         <div class="features-card wrap-sdw-box">
           <img src="./assets/icons/responsive.svg" alt="RESPONSIVE-IMAGE">
           <h3>Responsive</h3>
@@ -174,7 +202,7 @@
           project on <br> the web - it is the starting point for creative sites
         </p>
       </div>
-      <div class="wizard-step-container">
+      <div id="wiz-flex-row" class="wizard-step-container">
         <div class="wizard-circle"></div>
         <div class="wizard-line"></div>
         <div class="wizard-circle"></div>
@@ -183,12 +211,32 @@
         <div class="wizard-line"></div>
         <div class="wizard-circle"></div>
       </div>
-      <div class="why-front-comp-text">
+      <div id="wiz-flex-text" class="why-front-comp-text">
         <h3 id="text-first">Basic elements</h3>
         <h3>Components</h3>
         <h3>Combined components</h3>
         <h3 id="text-last">Page layouts</h3>
       </div>
+
+      <!-- only for 360px responsive ***** -->
+      <div id="wiz-flex-col" class="wizard-step-container">
+        <div class="wiz-div">
+          <div class="wizard-circle"></div>
+          <h3>Basic elements</h3>
+        </div>
+        <div class="wiz-div">
+          <div class="wizard-circle"></div>
+          <h3>Components</h3>
+        </div>
+        <div class="wiz-div">
+          <div class="wizard-circle"></div>
+          <h3>Combined components</h3>
+        </div>
+        <div class="wiz-div">
+          <div class="wizard-circle"></div>
+          <h3>Page layouts</h3>
+        </div>
+      </div> <!-- end only for 360px responsive ***** -->
     </div>
 
     <!-- SECTION-6 Video -->
@@ -213,9 +261,9 @@
       </div>
       <div class="hubspot-txt">
         <img src="./assets/company_logos/hubspot.svg" alt="">
-        <h3>The template is really nice and offers quite a <br>
-          large set of options. It's beautiful and the <br>
-          coding is done quickly and seamlessly. Thank <br>
+        <h3>The template is really nice and offers quite a
+          large set of options. It's beautiful and the
+          coding is done quickly and seamlessly. Thank
           you!</h3>
         <br>
         <br>
@@ -325,7 +373,7 @@
           </div>
         </div>
       </div>
-      <div class="contact-us-form">
+      <div class="contact-us-form hidden">
         <h4>Fill out the form and we'll be in touch as soon as <br>
           possible</h4>
         <form action="">
@@ -365,7 +413,8 @@
             placeholder="Tell us more about your project, needs, and timeline please..."></textarea>
           <div id="checkbox-wrapper">
             <input type="checkbox" class="larger-box" name="checkbox1">
-            <p>Yes, I'd like to receive occasional marketing emails from Front.
+            <p>Yes, I'd like to receive occasional marketing emails from
+              Front.
               I have the right to opt out at anytime.</p>
             </label>
           </div>
@@ -482,9 +531,8 @@
         <p>When you visit or interact with our sites, services or tools, we or
           our
           authorised service porviders may <br>
-          use cookies for storing information to help you with a better, faster
-          and
-          safer experience and <br>
+          use cookies for storing information to help you with a better,
+          faster and safer experience and <br>
           for marketing purposes.</p>
       </div>
     </div>

@@ -116,12 +116,29 @@ h4 {
   color: var(--font-color-dark);
 }
 
+em {
+  color: white;
+}
+
 .wrap-sdw-box {
   box-shadow: 5px 13px 20px rgba(0, 0, 0, 0.15);
 }
 
 .link-color {
   color: var(--color-link);
+}
+
+/* animations */
+.hidden {
+  opacity: 0;
+  filter: blur 5px;
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Responsive 1024px */
@@ -150,4 +167,8 @@ h4 {
     padding: var(--size-10) var(--size-20);
     font-size: var(--size-10);
   }
+
+  /* .navbar .icon {
+    display: none;
+  } */
 }
