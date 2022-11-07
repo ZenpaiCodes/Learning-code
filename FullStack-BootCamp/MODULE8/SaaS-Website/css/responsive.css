@@ -298,12 +298,10 @@
   }
 
   #nav-menu ul {
-    display: ;
     flex-direction: column;
     gap: var(--size-50);
     text-align: center;
   }
-
 
   #nav-menu button {
     position: absolute;
