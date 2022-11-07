@@ -35,11 +35,14 @@
           <script>
             // hamburger menu
             function myFunction() {
-              var x = document.getElementById("nav-menu");
-              if (x.style.display === "block") {
-                x.style.display = "none";
+              var navMenuDiv = document.getElementById("nav-menu");
+              var bodyHide = document.getElementById("hide-body");
+              if (navMenuDiv.style.display === "block") {
+                navMenuDiv.style.display = "none";
+                bodyHide.style.display = "block";
               } else {
-                x.style.display = "block";
+                navMenuDiv.style.display = "block";
+                bodyHide.style.display = "none";
               }
             }
           </script> <!-- END hamburger menu -->
@@ -58,7 +61,7 @@
     </div>
 
     <!-- RESPONSIVE hide content -->
-    <div class="hide-body">
+    <div id="hide-body">
       <!-- SECTION-2 header -->
       <div class="container">
         <div class="header-statement-logos">
