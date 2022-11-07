@@ -21,14 +21,14 @@
   padding: var(--size-20) 0;
 }
 
-#nav-menu {
+/* #nav-menu {
   position: absolute;
   top: 40px;
   left: 0;
   min-height: 100vh;
   z-index: 10000 !important;
   background-color: #01C9A7;
-}
+} */
 
 .nav-logo img {
   width: var(--size-200);
