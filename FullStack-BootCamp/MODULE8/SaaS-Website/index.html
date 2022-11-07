@@ -22,7 +22,7 @@
   <body>
     <div class="container">
       <!-- navbar and header background color -->
-      <div class="nav-header-bg"></div>
+      <div id="nav-header-bg"></div>
       <!-- SECTION-1 navbar -->
       <!-- logo and hamburger -->
       <div class="navbar">
@@ -37,12 +37,15 @@
             function myFunction() {
               var navMenuDiv = document.getElementById("nav-menu");
               var bodyHide = document.getElementById("hide-body");
+              var navBg = document.getElementById("nav-header-bg");
               if (navMenuDiv.style.display === "block") {
                 navMenuDiv.style.display = "none";
                 bodyHide.style.display = "block";
+                navBg.style.display = "block";
               } else {
                 navMenuDiv.style.display = "block";
                 bodyHide.style.display = "none";
+                navBg.style.display = "none";
               }
             }
           </script> <!-- END hamburger menu -->
@@ -540,8 +543,20 @@
             for marketing purposes.</p>
         </div>
       </div>
-
     </div>
+
+    <!-- Resize to default -->
+    <!-- <script>
+      window.addEventListener("resize", (e) => {
+        console.log(e.target.innerWidth); -->
+    <!-- // console.log(e.target.innerWidth);
+        if (e.target.innerWidth > 600) {
+          document.body.style.bdisplay = "red";
+        } else {
+          document.body.style.display= "blue";
+        }
+      }); -->
+    </script>
   </body>
 
 </html>

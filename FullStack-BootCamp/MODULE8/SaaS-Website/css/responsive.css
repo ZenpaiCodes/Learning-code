@@ -1,6 +1,6 @@
 /* 1024px RESOLUTION */
 @media screen and (max-width: 1024px) {
-  .nav-header-bg {
+  #nav-header-bg {
     height: var(--size-500);
     background: linear-gradient(115deg,
         rgb(217, 217, 217, 0.05) 15% 40%,
@@ -45,22 +45,21 @@
 
   /* hamburger menu */
   .navbar {
-    overflow: hidden;
     position: relative;
   }
 
   .nav-logo {
     display: flex;
-    align-items: center;
     width: 100%;
     justify-content: flex-end;
   }
 
-  .navbar #nav-menu {
-    display: none;
+  #navmenu {
+    position: relative;
   }
 
   .navbar a {
+    position: absolute;
     color: var(--font-color-dark);
     padding: 14px 16px;
     text-decoration: none;
@@ -73,8 +72,21 @@
     position: absolute;
   }
 
-  .navbar a:hover {
-    color: black;
+  #nav-menu ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: var(--size-150);
+    left: -60px;
+    width: 100%;
+    gap: var(--size-100);
+  }
+
+  #nav-menu button {
+    position: absolute;
+    justify-content: space-between;
+    top: var(--size-250);
+    left: 40%;
   }
 
   /* <!-- Section-2 header --> */
@@ -283,6 +295,21 @@
   .header-logos-container {
     width: 90%;
     padding-left: 0;
+  }
+
+  #nav-menu ul {
+    display: ;
+    flex-direction: column;
+    gap: var(--size-50);
+    text-align: center;
+  }
+
+
+  #nav-menu button {
+    position: absolute;
+    justify-content: space-between;
+    top: 435px;
+    left: 32%;
   }
 
   /* <!-- Section-2 header --> */
