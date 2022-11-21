@@ -81,3 +81,49 @@ console.log(numCalcTwo);
 // toPrecision()	Returns a number written with a specified length
 // ValueOf()	Returns a number as a number
 
+
+// SECTION 4: Comparison Operators
+// ==	Equal to
+// ===	Equal value and equal type
+// !=	Not equal
+// !==	Not equal value or not equal type
+// >	Greater than
+// <	Less than
+// >=	Greater than or equal to
+// <=	Less than or equal to
+// ?	Ternary operator
+
+let accountBalance = 100000;
+let transaction = 200000000;
+
+if (accountBalance > transaction) {
+  console.log('Your have more than enough!');
+  }
+  else if (accountBalance === transaction) {
+    console.log('Account Balance is equal to transaction');
+  } 
+  else {
+    console.log('transaction delined!');
+  }
+
+// SECTION 5: Logical Operators
+// &&	 and
+// ||	 or
+// !	 not
+
+let skaterOne = {
+  skaterName: 'Tony Hawk',
+  skaterScore: 50,
+}
+let skaterTwo = {
+  skaterName: 'Bob Burnquist',
+  skaterScore: 30,
+}
+let skaterThree = {
+  skaterName: 'Rodney Mullen',
+  skaterScore: 49.99,
+}
+
+if (skaterOne.skaterScore > skaterTwo.skaterScore && skaterOne.skaterScore >= skaterThree.skaterScore) {
+  console.log(skaterOne.skaterName + ' is the winner!');
+}
