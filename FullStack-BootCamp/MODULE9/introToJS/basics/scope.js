@@ -24,3 +24,40 @@ console.log(b);
 
 // to access the value of b in the function, we need to call the function.
 myFunction(5);
+
+
+// EXAMPLE #2  global scope vs local scope
+
+let firstName = 'Gaby';
+
+let userOne = {
+  firstName: 'Cata',
+  age: 8,
+}
+
+function userBDay(age) {
+  let newAge = age + 1;
+  userOne['age'] = newAge;
+  console.log('Happy Birthday ' + userOne['firstName'] + ' you are now ' + newAge);
+}
+
+userBDay(userOne['age']);
+console.log(userBDay);
+
+// BLOCK SCOPE
+// Block scope is the scope of a variable that is limited to a block of code.
+
+// EXAMPLE #1
+let y = 10;
+if (true) {
+  y = 20;
+  if (true) {
+    y = 'Hello';
+    for (let i = 0; i <4; i++) {
+      y = i;
+      console.log(i);
+    }
+  }
+}
+
+console.log(y); // it will not print, as it is not accessible outside of the block.
