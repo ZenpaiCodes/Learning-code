@@ -6,3 +6,6 @@ const warrior = {
   health: 999999
 };
 
+for(let key in warrior) {
+  console.log(`${key}: ${warrior[key]}`);
+};
