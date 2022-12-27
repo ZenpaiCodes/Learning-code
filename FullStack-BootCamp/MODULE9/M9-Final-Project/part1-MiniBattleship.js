@@ -53,40 +53,46 @@ let userGuess = {
 };
 console.log(userGuess);
 
+
 // 6. create a function to check if the user guessed the battleship position
-function checkGuess() {
-  grid[userGuess.x][userGuess.y] = 'missed!';
-  replaceGrid();
-  console.log(grid);
-  while (userGuess.x !== battleshipPosition.x || userGuess.y !== battleshipPosition.y) {
+let continueGame = true;
+
+while (continueGame) {
+  if (
+    userGuess.x === battleshipPosition.x &&
+    userGuess.y === battleshipPosition.y
+  ) {
+    grid[battleshipPosition.x][battleshipPosition.y] = "Σ■╬■>";
+    console.log("You hit the battleship, what a legend!");
+    console.log(grid);
+    continueGame = false;
+  } else {
+    grid[userGuess.x][userGuess.y] = "missed!";
+    console.log("You missed!");
+    console.log(grid);
     userGuess = {
       x: readlineSync.questionInt(`Guess the x coordinate: `),
-      y: readlineSync.questionInt(`Guess the y coordinate: `)
+      y: readlineSync.questionInt(`Guess the y coordinate: `),
     };
-    grid[userGuess.x][userGuess.y] = 'missed!';
-    console.log(grid);
   }
 }
-checkGuess();
 
-// 7. if user guessed the battleship position, replace grid '‿︵‿' with 'Σ■╬■>'
-function replaceGrid() {
-  if (userGuess.x === battleshipPosition.x && userGuess.y === battleshipPosition.y) {
-    grid[battleshipPosition.x][battleshipPosition.y] = 'Σ■╬■>';
-    console.log('You hit the battleship!')
-    return grid;
-  }
+// alternative solution
+/* -----------------
+while (
+  userGuess.x !== battleshipPosition.x ||
+  userGuess.y !== battleshipPosition.y
+) {
+  grid[userGuess.x][userGuess.y] = "missed!";
+  console.log("You missed!");
+  console.log(grid);
+  userGuess = {
+    x: readlineSync.questionInt(`Guess the x coordinate: `),
+    y: readlineSync.questionInt(`Guess the y coordinate: `),
+  };
 }
-console.log(replaceGrid());
 
-
-
-
-
-
-
-
-
-
-
-
+grid[battleshipPosition.x][battleshipPosition.y] = "Σ■╬■>";
+console.log("You hit the battleship!");
+ console.log(grid); 
+ --------------------*/

@@ -62,4 +62,15 @@
   opacity: 1;
 }
 
-.modal-body
+.modal-body {
+  display: flex;
+  align-items: center;
+}
+
+[data-animation="zoomInOut"].full-site-modal {
+  transform: scale(0.2);
+}
+
+[data-animation="zoomInOut"].full-site-modal.is-visible {
+  transform: none;
+}
